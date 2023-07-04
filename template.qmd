@@ -1,9 +1,12 @@
 ---
-title: Untitled
+title: Presentazione RSE
+subtitle: Una presentazione in stile RSE (quasi)
+lang: it
 format:
   rse_temp-revealjs: default
-author: giulio.mela
+author: Giulio Mela
 date: last-modified
+date-format: "D MMMM YYYY"
 ---
 
 ## Introduction
@@ -13,4 +16,17 @@ date: last-modified
 ## More Information
 
 You can learn more about controlling the appearance of RevealJS output here: <https://quarto.org/docs/presentations/revealjs/>
+
+# New section
+
+## Important stuff
+
+::: {.callout-note}
+Note that there are five types of callouts, including:
+`note`, `warning`, `important`, `tip`, and `caution`.
+:::
+
+
+
+
 
