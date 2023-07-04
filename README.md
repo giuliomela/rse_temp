@@ -1,4 +1,4 @@
-# <%= title %> Format
+# RSE Revealjs template
 
 ## Installing
 
