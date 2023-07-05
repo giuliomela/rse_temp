@@ -1,10 +1,14 @@
 ---
-title: Presentazione RSE
-subtitle: Una presentazione in stile RSE (quasi)
+title: Titolo
+subtitle: Sottotitolo
 lang: it
 format:
   rse_temp-revealjs: default
-author: Giulio Mela
+author:
+  - name: Giulio Mela
+    orcid: 0000-0003-0359-3625
+    email: giulio.mela@rse-web.it
+    affiliations: RSE S.p.A.
 date: last-modified
 date-format: "D MMMM YYYY"
 ---
