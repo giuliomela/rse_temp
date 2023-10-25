@@ -6,10 +6,12 @@ contributes:
   formats:
     revealjs:
       theme: [default, custom.scss]
-      logo: rse_logo_hd.png
+      #logo: RSE_logo.png
       footer: Ricerca sul Sistema Energetico - RSE S.p.A.
       slide-number: true
-      title-slide-attributes:
-        data-background-image: rse_background_title_white.jpg
-        data-background-size: cover
       scrollable: true
+      title-slide-attributes:
+         data-background-image: "sfondo_prima_slide.jpg"
+from: markdown+emoji
+embed-resources: true
+      #include-in-header: no_logo.txt

@@ -1,19 +1,19 @@
 /*-- scss:defaults --*/
 
-// Custom colours and variables
+// Custom colours and variables old accent #5baa33
 $jet: #131516;
-$accent: #5baa33;
+$accent: #70BB80;
 $accent2: #9a2515;
 $right-arrow: "\2192"; // Unicode character for right arrow
 
 // fonts
 @import url(https://fonts.googleapis.com/css?family=Roboto:200,200i,300,300i,350,350i,400,400i);
-$font-family-sans-serif: "Roboto", sans-serif !default;
+$font-family-sans-serif: "Arial", sans-serif !default;
 $presentation-font-size-root: 36px;
 
-$presentation-heading-font: "Roboto", sans-serif !default;
-$presentation-heading-color: $jet !default;
-$presentation-heading-font-weight: 200;
+$presentation-heading-font: "Arial Black", sans-serif !default;
+$presentation-heading-color: $accent !default;
+$presentation-heading-font-weight: bold;
 //$presentation-heading-line-height: 2;
 //$presentation-block-margin: 28px;
 
@@ -25,13 +25,24 @@ $selection-bg: #26351c !default;
 
 /*-- scss:rules --*/
 
+.reveal .footer {
+  font-family: "Trebuchet MS";
+  position: absolute;
+  bottom: 1.5em !important;
+  //left: 1em !important;
+  right: 30em !important;
+  //text-align: left !important;
+  font-size: 0.35em !important;
+}
+
+
 .slide-logo {
   display: block !important;
   position: fixed !important;
   top: 0 !important;
   right: 10px !important;
   max-height: 15% !important;
-  height: 100% !important;
+  height: 60% !important;
   width: auto !important;
   color: $body-color !important;
 }
@@ -45,13 +56,16 @@ $selection-bg: #26351c !default;
   margin-top: 1.25em;
 }
 
+//title slide nackground
+
 // title and headings
 
 #title-slide {
-  text-align: right;
-
+  text-align: center;
+  
   .title {
-    color: $body-color;
+    color: white;
+    font-family: "Arial Black";
     font-style: bold;
     font-size: 1.4em;
     font-weight: 350;
@@ -59,8 +73,13 @@ $selection-bg: #26351c !default;
   }
 
   .subtitle {
-    color: $accent;
+    color: white;
     font-style: italic;
+  }
+  
+  
+  .date {
+    color: white;
   }
 
   .institute,
@@ -68,12 +87,16 @@ $selection-bg: #26351c !default;
   .quarto-title-author-email {
     font-style: italic;
     // font-size: 80%;
-    // color: #7F7F7F;
+    color: white;
   }
 
   .author,
   .quarto-title-author-name {
-    color: $body-color;
+    color: white;
+  }
+  
+  .quarto-title-affiliation {
+    color: white;
   }
 
   .quarto-title-authors {
@@ -86,9 +109,9 @@ $selection-bg: #26351c !default;
       width: 100%;
     }
   }
-
+  
+  
 }
-
 
 .reveal h2 {
   font-weight: 350;
@@ -236,4 +259,8 @@ $selection-bg: #26351c !default;
   top: unset !important;
   color: #777777 !important;
   font-family: $font-family-sans-serif;
+}
+
+.reveal .slide-number > a[href*='title-slide'] {
+  display: none;
 }
